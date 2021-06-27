@@ -1,0 +1,45 @@
+import java.util.*;
+class biggest_four
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the values of a, b, c, d");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		int d=sc.nextInt();
+		if((a>b)&(a>c)&(a>d))
+		{
+			System.out.println("a is biggest.");
+		}
+		else if((b>c)&(b>d))
+		{
+			System.out.println("b is biggest.");
+		}
+		else if(c>d)
+		{
+			System.out.println("c is biggest.");
+		}
+		else
+		{
+			System.out.println("d is biggest.");
+		}
+	}
+}
+
+o/p 1:
+Enter the values of a, b, c, d
+9
+3
+2
+8
+a is biggest.
+
+o/p 2:
+Enter the values of a, b, c, d
+3
+5
+2
+7
+d is biggest.
