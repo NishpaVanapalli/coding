@@ -1,0 +1,22 @@
+import java.util.*;
+class even_odd2
+{
+	public static void main(String ar[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number ");
+		int n=sc.nextInt();
+		System.out.println(((n&1)!=1)?"even":"odd");
+	}
+} 
+
+
+o/p 1:
+Enter a number
+3
+odd
+
+o/p 2:
+Enter a number
+4
+even
