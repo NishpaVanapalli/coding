@@ -1,0 +1,40 @@
+import java.util.*;
+class leap_year
+{
+	public static void main(String ar[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter an year ");
+		int year=sc.nextInt();
+		if (year%4==0)
+		{
+			if ((year%100==0)&(year%400==0))
+			{
+				System.out.println("centurial leap year");
+			}
+			else
+			{
+				System.out.println("leap year");
+			}
+		}	
+		else
+		{
+		System.out.println("non-leap year");
+		}
+	}
+}
+
+o/p 1:
+Enter an year
+2000
+centurial leap year
+
+o/p 2:
+Enter an year
+2014
+non-leap year
+
+o/p 3:
+Enter an year
+2004
+leap year
