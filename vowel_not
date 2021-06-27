@@ -1,0 +1,41 @@
+import java.util.*;
+class vowel_not
+{
+	public static void main(String ar[])
+	{	
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter an alphabet");
+		String s=sc.next();
+		boolean vowel=s.equals("a")||s.equals("e")||s.equals("i")||s.equals("o")||s.equals("u")||s.equals("A")||s.equals("E")||s.equals("I")||s.equals("O")||s.equals("U");
+		if(s.length()==1)
+		{
+			if(vowel)
+			{
+				System.out.println("Vowel");
+			}
+			else
+			{
+				System.out.println("Consonant");
+			}
+		}
+		else
+		{
+			System.out.println("String is not accepted.");
+		}
+	}
+}
+
+o/p 1:
+Enter an alphabet
+A
+Vowel
+
+o/p 2:
+Enter an alphabet
+h
+Consonant
+
+o/p 3:
+Enter an alphabet
+laskj
+String is not accepted.
